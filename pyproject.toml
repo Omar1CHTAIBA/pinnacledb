@@ -1,0 +1,22 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "pinnacledb"
+version = "0.1.0-beta"
+authors = [
+  { name="Chtaïba Omar", email="omarchtaiba4@gmail.com" },
+]
+description = "PinnacleDB is a lightweight, file-based database management system that allows users to create, manipulate, and retrieve data efficiently."
+readme = "README.md"
+requires-python = ">=3.6"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+[project.urls]
+Homepage = "https://github.com/Omar1CHTAIBA?tab=repositories"
+Issues = "https://github.com/Omar1CHTAIBA?tab=repositories"
