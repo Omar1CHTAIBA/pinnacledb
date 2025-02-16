@@ -42,7 +42,7 @@ In this example, there is a table called "users". Each table dictionary contains
 This structure is designed to be extended easily. As you create additional tables or insert more rows, the "tables" dictionary will simply have more keys, and each table can grow with its own set of columns and rows.
 ###### Putting It All Together
 - Initialization:
-When a new PinnacleDB instance is created, the code checks for the existence of a database file. If the file is missing, it creates one by serializing a starting dictionary (initially empty tables) using PicleSerializer.serialize.
+When a new PinnacleDB instance is created, the code checks for the existence of a database file. If the file is missing, it creates one by serializing a starting dictionary (initially empty tables) using PinnacleSerializer.serialize.
 
 - Serialization and Deserialization:
 The serialized file contains the entire state of the database (in the form of a dictionary following the structure shown above). Every time the database is modified (e.g., tables are created, rows are added or updated), the in-memory dictionary is re-serialized to the file, ensuring that all changes are saved.
